@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dataDownloader"
+version = "0.1.0"
+description = ""
+authors = ["yingjie.hu <yingjie.hu@fargowealth.com.hk>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+selenium = "^4.1.0"
+ipykernel = "^6.9.1"
+auto-everything = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
