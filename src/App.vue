@@ -7,6 +7,8 @@ import artical_contents from './assets/artical_contents.json';
 import ArticalViewVue from './components/ArticalView.vue';
 import { reactive } from 'vue';
 
+import { ElMessage } from 'element-plus'
+
 const dict = reactive({
   tempData: {
     showDialog: false,
@@ -37,6 +39,8 @@ const dict = reactive({
                   audio_url: artical_contents[item.article_link].audio_url,
                 };
                 dict.tempData.showDialog = true;
+              } else {
+                ElMessage.error('No data for this article, sorry.')
               }
             }"
           >Check</div>
