@@ -38,7 +38,6 @@ const dict = reactive({
                 };
                 dict.tempData.showDialog = true;
               }
-              dict.tempData.showDialog = true;
             }"
           >Check</div>
         </div>

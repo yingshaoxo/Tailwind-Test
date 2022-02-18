@@ -8,7 +8,7 @@ const count = ref(0)
 
 <template>
   <template class="flex justify-center mt-2">
-    <audio controls>
+    <audio controls :key="audio_url">
       <source :src="audio_url" type="audio/mpeg" />
     </audio>
   </template>
